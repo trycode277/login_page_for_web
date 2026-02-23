@@ -4,15 +4,15 @@ function login() {
     let message = document.getElementById("message");
 
     if (username === "" || password === "") {
-        message.style.color = "red";
-        message.innerHTML = "Please fill all fields";
-    }
+        message.style.color = "#ffcccc";
+        message.innerHTML = "⚠️ Please fill all fields";
+    } 
     else if (username === "admin" && password === "1234") {
-        message.style.color = "green";
-        message.innerHTML = "Login Successful";
-    }
+        message.style.color = "#b6ffb6";
+        message.innerHTML = "✅ Login Successful!";
+    } 
     else {
-        message.style.color = "red";
-        message.innerHTML = "Invalid Username or Password";
+        message.style.color = "#ffb6b6";
+        message.innerHTML = "❌ Invalid Username or Password";
     }
 }
